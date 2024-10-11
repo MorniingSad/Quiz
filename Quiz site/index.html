@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Avaliação - Preferências de Benefícios</title>
+    <link rel="stylesheet" href="estilos/inicial.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz">
+            <!-- Pergunta 1 -->
+            <div class="quiz-slide">
+                <h2>Pergunta 1</h2>
+                <p>Qual dessas opções abaixo, voçê acha mais atrativa ?</p>
+                <button class="option-btn" onclick="nextSlide()">Vale Refeição</button>
+                <button class="option-btn" onclick="nextSlide()">Vale Alimentação</button>
+                <button class="option-btn" onclick="nextSlide()">Vale Hibrído</button>
+            </div>
+            <!-- Pergunta 2 -->
+            <div class="quiz-slide">
+                <h2>Pergunta 2</h2>
+                <p>__________ (Preencha com a questão)</p>
+                <button class="option-btn" onclick="nextSlide()">Opção 1</button>
+                <button class="option-btn" onclick="nextSlide()">Opção 2</button>
+            </div>
+            <!-- Pergunta 3 -->
+            <div class="quiz-slide">
+                <h2>Pergunta 3</h2>
+                <p>__________ (Preencha com a questão)</p>
+                <button class="option-btn" onclick="nextSlide()">Opção 1</button>
+                <button class="option-btn" onclick="nextSlide()">Opção 2</button>
+            </div>
+            <!-- Continue adicionando até Pergunta 10 -->
+            <div class="quiz-slide">
+                <h2>Pergunta 3</h2>
+                <p>__________ (Preencha com a questão)</p>
+                <button class="option-btn" onclick="nextSlide()">Opção 1</button>
+                <button class="option-btn" onclick="nextSlide()">Opção 2</button>
+            </div>
+        </div>
+        <div class="quiz-navigation">
+            <button id="prevBtn" onclick="prevSlide()">Anterior</button>
+            <button id="nextBtn" onclick="nextSlide()">Próxima</button>
+        </div>
+    </div>
+
+    <script src="Quizz.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #001f3f, #0b0899, #07c4ca, #001f3f); /* Gradiente de aurora azul */
+    background-size: 90% 60%;
+    animation: aurora 10s ease infinite;
+}
+
+@keyframes aurora {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.quiz-container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo translúcido */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Evita que o conteúdo exceda o contêiner */
+}
+
+#quiz {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.quiz-slide {
+    flex: 0 0 100%; /* Cada slide ocupa exatamente 100% da largura */
+    padding: 20px;
+    background-color: #e3f2fd; /* Azul mais claro */
+    border-radius: 10px;
+    box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
+}
+
+h2 {
+    color: #1976d2; /* Azul médio */
+    text-align: center;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #1976d2; /* Azul médio */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+    background-color: #1565c0; /* Azul mais escuro */
+}
+
+.quiz-navigation {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#prevBtn, #nextBtn {
+    background-color: #64b5f6; /* Azul claro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    background-color: #42a5f5; /* Azul médio */
+}
